@@ -5,7 +5,7 @@
   // Font Sizes
 
   // --fs-300: #{f.rem(14)};
-  // --fs-400: #{f.rem(16)};
+  --fs-400: #{f.rem(16)};
   // --fs-425: #{f.rem(18)};
   // --fs-475: #{f.rem(20)};
   // --fs-450: #{f.rem(24)};
@@ -37,7 +37,7 @@
 // Font Sizes
 
 // $fs-300: var(--fs-300);
-// $fs-400: var(--fs-400);
+$fs-400: var(--fs-400);
 // $fs-425: var(--fs-425);
 // $fs-450: var(--fs-450);
 // $fs-475: var(--fs-475);
@@ -51,8 +51,7 @@
 
 // Font Family
 
-$ff-primary: "Montserrat", sans-serif;
-$ff-accent: "Raleway", sans-serif;
+$ff-primary: 'Ubuntu', sans-serif;
 
 // Font Weights
 
@@ -63,8 +62,8 @@ $fw-bold: 700;
 
 // Layout Font Sizes
 
-// $fs-body: $fs-400;
-// $fs-nav: $fs-400;
+$fs-body: $fs-400;
+$fs-nav: $fs-400;
 
 // $fs-primary-heading: $fs-700;
 // $fs-secondary-heading: $fs-650;
@@ -74,5 +73,5 @@ $fw-bold: 700;
 
 // Layout Font Family
 
-// $ff-body: $ff-primary;
+$ff-body: $ff-primary;
 // $ff-button: $ff-primary;

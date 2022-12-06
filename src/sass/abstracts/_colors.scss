@@ -1,27 +1,17 @@
 :root {
-   // --clr-primary-300:hsl(203, 96%, 44%);
-   // --clr-primary-400: hsl(203, 100%, 32%);
-   // --clr-primary-500: hsl(203, 100%, 25%);
+   --clr-primary-400: hsl(212, 100%, 23%);
 
-   // --clr-accent-300:hsl(79, 95%, 48%);
-   // --clr-accent-400:hsl(79, 100%, 33%);
-   // --clr-accent-500:hsl(79, 96%, 29%);
+   --clr-accent-400: hsl(345, 85%, 44%);
 
-   // --clr-neutral-100: hsl(0, 0%, 100%);
-   // --clr-neutral-400:hsl(240, 2%, 64%);
-   // --clr-neutral-700:hsl(0, 0%, 25%);
-   // --clr-neutral-900:hsl(0, 0%, 0%);
+   --clr-neutral-100: hsl(0, 0%, 100%);
+   --clr-neutral-400: hsl(0, 0%, 93%);
+   --clr-neutral-900: hsl(0, 0%, 0%);
 }
 
-// $clr-primary-300: var(--clr-primary-300);
-// $clr-primary-400: var(--clr-primary-400);
-// $clr-primary-500: var(--clr-primary-500);
+$clr-primary-400: var(--clr-primary-400);
 
-// $clr-accent-300: var(--clr-accent-300);
-// $clr-accent-400: var(--clr-accent-400);
-// $clr-accent-500: var(--clr-accent-500);
+$clr-accent-400: var(--clr-accent-400);
 
-// $clr-neutral-100: var(--clr-neutral-100);
-// $clr-neutral-400: var(--clr-neutral-400);
-// $clr-neutral-700: var(--clr-neutral-700);
-// $clr-neutral-900: var(--clr-neutral-900);
+$clr-neutral-100: var(--clr-neutral-100);
+$clr-neutral-400: var(--clr-neutral-400);
+$clr-neutral-900: var(--clr-neutral-900);
