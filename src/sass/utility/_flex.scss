@@ -1,10 +1,10 @@
 @use "/src/sass/abstracts/" as *;
 @use "/src/sass/base/" as *;
 
-// .flex {
-//   display: flex;
-//   gap: var(--gap, 1rem);
-// }
+.flex {
+    display: flex;
+    gap: var(--gap, 1rem);
+}
 
 // .flex-md{
 //   @include breakpoint(md) {
@@ -27,11 +27,11 @@
 //   }
 // }
 
-// .flex-col {
-//   display: flex;
-//   gap: var(--gap, 1rem);
-//   flex-direction: column;
-// }
+.flex-col {
+    display: flex;
+    gap: var(--gap, 1rem);
+    flex-direction: column;
+}
 
 // .flex-col-max-sm {
 //   @include breakpoint-down(sm) {
@@ -92,9 +92,9 @@
 //   }
 // }
 
-// .j-center {
-//   justify-content: center;
-// }
+.j-center {
+    justify-content: center;
+}
 
 // .j-end {
 //   justify-content: end;
@@ -104,9 +104,9 @@
 //   justify-content: space-evenly;
 // }
 
-// .a-items-center {
-//   align-items: center;
-// }
+.a-center {
+    align-items: center;
+}
 
 // .a-items-center-lg{
 //   @include breakpoint(lg) {

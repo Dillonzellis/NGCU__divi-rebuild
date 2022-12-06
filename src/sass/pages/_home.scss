@@ -1,2 +1,77 @@
 @use "/src/sass/abstracts/" as *;
 @use "/src/sass/base/" as *;
+
+
+.card {
+    width: rem(320);
+    height: rem(244);
+
+    border: solid 1px $clr-primary-400;
+    border-radius: 15px;
+
+    // padding: rem(25);
+
+    transform: scale(1);
+    transition: transform 200ms ease;
+
+    &:hover,
+    &:focus {
+        transform: scale(1.05) translateY(-.125em);
+
+        &::before {
+            opacity: .3;
+        }
+    }
+
+    .fa-fas {
+        font-size: 37px;
+
+        border: 5px solid $clr-primary-400;
+        border-radius: 100vmax;
+    }
+
+    &__header {
+        text-decoration: underline;
+    }
+
+    &__hr {
+        background-color: #F1F1F1;
+        // display: block;
+        height: 4px;
+        // margin: -5px auto 15px;
+        width: rem(50);
+        -webkit-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+    }
+
+    &__btn {
+
+        display: inline-flex;
+        cursor: pointer;
+        text-transform: capitalize;
+        border: 0;
+        border-radius: 100vmax;
+        padding: 0.8em 1.25em;
+        line-height: 1;
+
+        color: $clr-neutral-100;
+        background-color: $clr-accent-400;
+
+        transform: scale(1);
+        transition: transform 200ms ease;
+
+        a {
+            color: $clr-neutral-100;
+        }
+
+        &:hover,
+        &:focus {
+            transform: scale(1.05) translateY(-.125em);
+
+            &::before {
+                opacity: .3;
+            }
+        }
+
+    }
+}
