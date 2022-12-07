@@ -1,6 +1,39 @@
 @use '/src/sass/abstracts/' as *;
 @use '/src/sass/base/' as *;
 
+
+
+.btn {
+
+    display: inline-flex;
+    cursor: pointer;
+    text-transform: capitalize;
+    border: 0;
+    border-radius: 100vmax;
+    padding: 0.8em 1.25em;
+    line-height: 1;
+
+    color: $clr-neutral-100;
+    background-color: $clr-accent-400;
+
+    transform: scale(1);
+    transition: transform 200ms ease;
+
+    a {
+        color: $clr-neutral-100;
+    }
+
+    &:hover,
+    &:focus {
+        transform: scale(1.05) translateY(-.125em);
+
+        &::before {
+            opacity: .3;
+        }
+    }
+
+}
+
 // .btn {
 //     display: inline-flex;
 //     cursor: pointer;

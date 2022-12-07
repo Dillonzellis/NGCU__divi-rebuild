@@ -12,7 +12,7 @@
 
 
 .container-de {
-  --max-width: 1500px;
+  --max-width: 1250px;
   --container-padding: 1rem;
 
   width: min(var(--max-width), 100% - (var(--container-padding) * 2)) !important;
@@ -57,4 +57,13 @@
 //   @include breakpoint-down(lg) {
 //     order: 2;
 //   }
+// }
+
+.grid-1fr-2fr{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+// .j-content-center{
+//   justify-content: center;
 // }
