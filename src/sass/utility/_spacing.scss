@@ -11,10 +11,21 @@
     padding: 1rem;
 }
 
-// .py-400 {
-//   padding-top: 1rem;
-//   padding-bottom: 1rem;
-// }
+.py-400 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.py-450 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.py-650{
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
 
 // .pb-200 {
 //   padding-bottom: 0.5rem !important;
@@ -47,7 +58,7 @@
 }
 
 .mb-500 {
-  margin-bottom: 1rem !important;
+  margin-bottom: 1.5rem !important;
 }
 
 
@@ -58,6 +69,11 @@
 .mb-700 {
     margin-bottom: 4.5rem;
 }
+
+.mr-200{
+  margin-right: 0.5rem;
+}
+
 
 // .mb-700 {
 //   margin-bottom: 3rem;
