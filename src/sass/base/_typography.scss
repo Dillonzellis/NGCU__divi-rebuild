@@ -4,7 +4,7 @@
 :root {
   // Font Sizes
 
-  // --fs-300: #{f.rem(14)};
+  --fs-300: #{f.rem(14)};
   --fs-400: #{f.rem(16)};
   --fs-425: #{f.rem(18)};
   --fs-450: #{f.rem(20)};
@@ -37,7 +37,7 @@
 
 // Font Sizes
 
-// $fs-300: var(--fs-300);
+$fs-300: var(--fs-300);
 $fs-400: var(--fs-400);
 $fs-425: var(--fs-425);
 $fs-450: var(--fs-450);

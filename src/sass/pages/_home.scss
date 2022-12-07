@@ -82,9 +82,14 @@
     border-top: 1px solid #ccc;
 }
 
-.trustage-section{
-    .grid{
+.trustage-section {
+    .grid {
         display: grid;
         grid-template-columns: 1.5fr 2fr;
+    }
+
+    hr {
+        border-top: none;
+        border-color: #ccc;
     }
 }

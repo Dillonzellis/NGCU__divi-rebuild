@@ -3,9 +3,9 @@
 
 // Font Sizes
 
-// .fs-300 {
-//   font-size: $fs-300;
-// }
+.fs-300 {
+  font-size: $fs-300;
+}
 
 .fs-400 {
     font-size: $fs-400;
@@ -41,9 +41,13 @@
 
 // Weights
 
-// .fw-medium {
-//     font-weight: $fw-medium;
-// }
+.fw-regular{
+    font-weight: 400;
+}
+
+.fw-medium {
+    font-weight: $fw-medium;
+}
 
 .fw-semi-bold {
     font-weight: $fw-semi-bold;
@@ -100,6 +104,10 @@
 // .upper{
 //   text-transform: uppercase;
 // }
+
+.underline{
+    text-decoration: underline !important;
+}
 
 // Hyperlinks
 

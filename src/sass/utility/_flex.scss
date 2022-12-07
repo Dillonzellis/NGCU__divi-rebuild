@@ -80,11 +80,11 @@
 //   }
 // }
 
-// .flex-row-md {
-//   @include breakpoint(md) {
-//     flex-direction: row;
-//   }
-// }
+.flex-row-md {
+  @include breakpoint(md) {
+    flex-direction: row;
+  }
+}
 
 // .flex-row-lg{
 //   @include breakpoint(lg) {
@@ -98,6 +98,10 @@
 
 .j-around {
     justify-content: space-around;
+}
+
+.j-between {
+    justify-content: space-between;
 }
 
 // .j-end {
