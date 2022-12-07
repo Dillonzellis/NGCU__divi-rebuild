@@ -7,6 +7,7 @@
 
    --clr-neutral-100: hsl(0, 0%, 100%);
    --clr-neutral-400: hsl(0, 0%, 97%);
+   --clr-neutral-700: hsl(0, 0%, 29%);
    --clr-neutral-900: hsl(0, 0%, 0%);
 }
 
@@ -18,4 +19,5 @@ $clr-tertiary-400: var(--clr-tertiary-400);
 
 $clr-neutral-100: var(--clr-neutral-100);
 $clr-neutral-400: var(--clr-neutral-400);
+$clr-neutral-700: var(--clr-neutral-700);
 $clr-neutral-900: var(--clr-neutral-900);
