@@ -3,8 +3,9 @@
 
 
 .card {
-    width: rem(370);
-    height: rem(286);
+ 
+    // max-width: rem(370);
+    // max-height: rem(286);
 
     border: solid 1px $clr-primary-400;
     border-radius: 15px;
@@ -20,6 +21,13 @@
 
         &::before {
             opacity: .3;
+        }
+    }
+
+    &__content{
+        padding: 2rem 3rem;
+        @include breakpoint(sm){
+            padding: 2rem 6rem;
         }
     }
 
@@ -83,9 +91,16 @@
 }
 
 .trustage-section {
+//    justify-content: center;
     .grid {
         display: grid;
-        grid-template-columns: 1.5fr 2fr;
+        @include breakpoint(lg){
+            grid-template-columns: 1.5fr 2fr;
+            // img{
+            //     margin-inline: auto;
+            // }
+        }
+        
     }
 
     hr {

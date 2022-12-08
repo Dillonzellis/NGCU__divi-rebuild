@@ -86,11 +86,17 @@
   }
 }
 
-// .flex-row-lg{
-//   @include breakpoint(lg) {
-//     flex-direction: row;
-//   }
-// }
+.flex-row-lg{
+  @include breakpoint(lg) {
+    flex-direction: row;
+  }
+}
+
+.flex-row-xl{
+  @include breakpoint(xl) {
+    flex-direction: row;
+  }
+}
 
 .j-center {
     justify-content: center;

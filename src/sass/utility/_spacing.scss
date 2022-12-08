@@ -21,6 +21,11 @@
   padding-bottom: 1.5rem;
 }
 
+.py-500 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
 .py-650{
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
@@ -126,11 +131,11 @@
 //   margin-inline-start: auto !important;
 // }
 
-// .m-inline-auto-max-lg {
-//   @include breakpoint-down(lg) {
-//     margin-inline: auto !important;
-//   }
-// }
+.m-inline-auto-max-lg {
+  @include breakpoint-down(lg) {
+    margin-inline: auto !important;
+  }
+}
 
 // Width
 
