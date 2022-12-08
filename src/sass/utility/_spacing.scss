@@ -3,12 +3,17 @@
 
 // Padding & Margin
 
-// .p-0 {
-//   padding: 0 !important;
-// }
+.p-0 {
+  padding: 0 !important;
+}
 
 .p-400 {
     padding: 1rem;
+}
+
+.py-0 {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
 }
 
 .py-400 {
@@ -31,6 +36,10 @@
   padding-bottom: 2.5rem;
 }
 
+
+.pb-0 {
+  padding-bottom: 0.5rem !important;
+}
 
 // .pb-200 {
 //   padding-bottom: 0.5rem !important;
@@ -69,6 +78,13 @@
 
 .mb-600 {
   margin-bottom: 2rem;
+}
+
+.mb-650-min-md {
+  @include breakpoint(md){
+    margin-bottom: 3rem !important;
+  }
+
 }
 
 .mb-700 {

@@ -47,14 +47,27 @@
 //   }
 // }
 
-// .col-1 {
-//   @include breakpoint-down(lg) {
+// .col-1-max-md {
+//   @include breakpoint-down(md) {
 //     order: 1;
 //   }
 // }
 
-// .col-2 {
-//   @include breakpoint-down(lg) {
+.col-1-max-lg {
+  @include breakpoint-down(lg) {
+    order: 1;
+  }
+}
+
+// .col-2-max-md {
+//   @include breakpoint-down(md) {
 //     order: 2;
 //   }
 // }
+
+.col-2-max-lg {
+  @include breakpoint-down(lg) {
+    order: 2;
+  }
+}
+
