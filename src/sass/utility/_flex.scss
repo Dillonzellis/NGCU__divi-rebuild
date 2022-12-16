@@ -2,8 +2,8 @@
 @use "/src/sass/base/" as *;
 
 .flex {
-    display: flex;
-    gap: var(--gap, 1rem);
+  display: flex;
+  gap: var(--gap, 1rem);
 }
 
 // .flex-md{
@@ -28,9 +28,9 @@
 // }
 
 .flex-col {
-    display: flex;
-    gap: var(--gap, 1rem);
-    flex-direction: column;
+  display: flex;
+  gap: var(--gap, 1rem);
+  flex-direction: column;
 }
 
 // .flex-col-max-sm {
@@ -55,7 +55,7 @@
 //   }
 // }
 
-.flex-col-md{
+.flex-col-md {
   @include breakpoint(md) {
     display: flex;
     gap: var(--gap, 1rem);
@@ -94,32 +94,32 @@
   }
 }
 
-.flex-row-lg{
+.flex-row-lg {
   @include breakpoint(lg) {
     flex-direction: row;
   }
 }
 
-.flex-row-xl{
+.flex-row-xl {
   @include breakpoint(xl) {
     flex-direction: row;
   }
 }
 
 .j-center {
-    justify-content: center;
+  justify-content: center;
 }
 
-.j-items-center{
+.j-items-center {
   justify-items: center;
 }
 
 .j-around {
-    justify-content: space-around;
+  justify-content: space-around;
 }
 
 .j-between {
-    justify-content: space-between;
+  justify-content: space-between;
 }
 
 // .j-end {
@@ -131,7 +131,7 @@
 // }
 
 .a-center {
-    align-items: center;
+  align-items: center;
 }
 
 // .a-items-center-lg{
@@ -144,7 +144,7 @@
   flex-wrap: wrap;
 }
 
-.grid{
+.grid {
   display: grid;
 }
 
@@ -153,7 +153,7 @@
 }
 
 .gap-0-min-md {
-  @include breakpoint(md){
+  @include breakpoint(md) {
     gap: 0;
   }
 
@@ -171,6 +171,12 @@
 
 .gap-400 {
   gap: 1rem;
+}
+
+.gap-500-min-md {
+  @include breakpoint(md) {
+    gap: 2rem;
+  }
 }
 
 .gap-500 {

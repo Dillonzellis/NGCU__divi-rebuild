@@ -8,7 +8,7 @@
 }
 
 .p-400 {
-    padding: 1rem;
+  padding: 1rem;
 }
 
 .py-0 {
@@ -31,7 +31,7 @@
   padding-bottom: 2rem;
 }
 
-.py-650{
+.py-650 {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
 }
@@ -63,9 +63,9 @@
 //   margin-bottom: 0 !important;
 // }
 
-// .mb-200 {
-//   margin-bottom: 0.5rem !important;
-// }
+.mb-200 {
+  margin-bottom: 0.5rem !important;
+}
 
 .mb-400 {
   margin-bottom: 1rem !important;
@@ -81,17 +81,17 @@
 }
 
 .mb-650-min-md {
-  @include breakpoint(md){
+  @include breakpoint(md) {
     margin-bottom: 3rem !important;
   }
 
 }
 
 .mb-700 {
-    margin-bottom: 4.5rem;
+  margin-bottom: 4.5rem;
 }
 
-.mr-200{
+.mr-200 {
   margin-right: 0.5rem;
 }
 
@@ -140,7 +140,7 @@
 // }
 
 .m-inline-auto {
-    margin-inline: auto !important;
+  margin-inline: auto !important;
 }
 
 // .m-start-auto {
