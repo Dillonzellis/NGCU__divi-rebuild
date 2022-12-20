@@ -144,9 +144,6 @@
   flex-wrap: wrap;
 }
 
-.grid {
-  display: grid;
-}
 
 .gap-0 {
   gap: 0;
@@ -186,3 +183,25 @@
 .gap-600 {
   gap: 3rem;
 }
+
+.grid {
+  display: grid;
+}
+
+.grid-2-col-min-md {
+  @include breakpoint(md) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.grid-5-col-min-lg {
+  @include breakpoint(lg) {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+}
+
+// .grid-auto-flow-col-min-lg {
+//   @include breakpoint(lg) {
+//     grid-auto-flow: column;
+//   }
+// }
