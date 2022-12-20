@@ -1,0 +1,16 @@
+@use '/src/sass/abstracts/' as *;
+@use '/src/sass/base/' as *;
+
+.styled-list {
+    list-style: none !important;
+
+    li {
+        gap: 0;
+
+        i {
+            margin-right: 0.5rem;
+            color: $clr-accent-400;
+        }
+    }
+
+}
