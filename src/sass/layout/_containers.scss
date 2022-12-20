@@ -13,7 +13,7 @@
 
 .container-de {
   --max-width: 1250px;
-  --container-padding: 1rem;
+  --container-padding: 1.75rem;
 
   width: min(var(--max-width), 100% - (var(--container-padding) * 2)) !important;
   margin-inline: auto;
