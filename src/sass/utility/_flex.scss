@@ -194,6 +194,12 @@
   }
 }
 
+.grid-2-1-col-min-lg {
+  @include breakpoint(lg) {
+    grid-template-columns: 2fr 1fr;
+  }
+}
+
 .grid-5-col-min-lg {
   @include breakpoint(lg) {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;

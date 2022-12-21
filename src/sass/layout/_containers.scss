@@ -63,6 +63,12 @@
   }
 }
 
+// .col-1-min-md {
+//   @include breakpoint-down(md) {
+//     order: 1;
+//   }
+// }
+
 // .col-2-max-md {
 //   @include breakpoint-down(md) {
 //     order: 2;

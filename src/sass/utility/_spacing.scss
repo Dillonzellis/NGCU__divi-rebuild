@@ -101,6 +101,12 @@
   margin-right: 0.5rem;
 }
 
+.ml-auto-min-lg {
+  @include breakpoint(lg) {
+    margin-left: auto;
+  }
+}
+
 
 // .mb-700 {
 //   margin-bottom: 3rem;
@@ -148,6 +154,12 @@
 .m-inline-auto {
   margin-inline: auto !important;
 }
+
+// .m-inline-auto-min-lg {
+//   @include breakpoint(lg) {
+//     margin-inline: auto !important;
+//   }
+// }
 
 // .m-start-auto {
 //   margin-inline-start: auto !important;
