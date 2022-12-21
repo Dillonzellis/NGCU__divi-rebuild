@@ -1,60 +1,58 @@
 @use '/src/sass/abstracts/' as *;
 @use '/src/sass/base/' as *;
 
-// .rates-table {
+.standard-table {
 
-//     table,
-//     tr,
-//     td,
-//     th {
-//         border: 0.25px solid $clr-neutral-700;
-//     }
+    table,
+    tr,
+    td,
+    th {
+        border: 0.25px solid $clr-neutral-700;
+    }
 
-//     table {
-//         border-spacing: 0;
-//         width: 100%;
+    table {
+        border-spacing: 0;
+        width: 100%;
 
-//         th {
-//             background-color: $clr-primary-400;
-//             color: $clr-neutral-100;
-//             font-size: $fs-400;
+        th {
+            background-color: $clr-accent-400;
+            color: $clr-neutral-100;
+            font-size: $fs-400;
 
-//             padding: 0.5rem 1rem;
+            padding: 0.5rem 1rem;
 
-//             span {
-//                 font-size: $fs-400;
-//             }
-//         }
+            span {
+                font-size: $fs-400;
+            }
+        }
 
-//         tr:nth-child(odd) {
-//             background-color: rgb(235, 235, 235);
-//         }
+        tr:nth-child(odd) {
+            background-color: rgb(235, 235, 235);
+        }
 
-//         td {
-//             padding: 0.25rem 1rem;
+        td {
+            padding: 0.25rem 1rem;
 
-//             &:not(:first-child) {
-//                 text-align: center;
-//             }
-//         }
-//     }
+            &:not(:first-child) {
+                text-align: center;
+            }
+        }
+    }
 
-//     @media(min-width:30em) {
-//         table {
-//             border-spacing: 0;
+    @media(min-width:30em) {
+        table {
+            border-spacing: 0;
 
-//             th {
-//                 background-color: $clr-primary-400;
-//                 color: $clr-neutral-100;
-//                 font-size: $fs-450;
-//             }
+            th {
+                font-size: $fs-450;
+            }
 
-//             td {
-//                 padding: 0.5rem 1rem;
-//             }
-//         }
-//     }
-// }
+            td {
+                padding: 0.5rem 1rem;
+            }
+        }
+    }
+}
 
 .res-table {
     table {
