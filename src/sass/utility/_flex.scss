@@ -122,6 +122,18 @@
   justify-content: space-between;
 }
 
+// .j-between-min-md {
+//   @include breakpoint(md) {
+//     justify-content: space-between;
+//   }
+// }
+
+.j-between-min-lg {
+  @include breakpoint(lg) {
+    justify-content: space-between;
+  }
+}
+
 // .j-end {
 //   justify-content: end;
 // }
