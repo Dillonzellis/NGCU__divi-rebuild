@@ -4,7 +4,7 @@
 // Font Sizes
 
 .fs-300 {
-  font-size: $fs-300;
+    font-size: $fs-300;
 }
 
 .fs-400 {
@@ -41,7 +41,7 @@
 
 // Weights
 
-.fw-regular{
+.fw-regular {
     font-weight: 400;
 }
 
@@ -67,15 +67,19 @@
     color: $clr-neutral-100;
 }
 
+.clr-neutral-400 {
+    color: $clr-neutral-100;
+}
+
 .clr-neutral-700 {
-  color: $clr-neutral-700;
+    color: $clr-neutral-700;
 }
 
 .clr-neutral-900 {
     color: $clr-neutral-900;
 }
 
-.clr-accent-400{
+.clr-accent-400 {
     color: $clr-accent-400;
 }
 
@@ -105,7 +109,7 @@
 //   text-transform: uppercase;
 // }
 
-.underline{
+.underline {
     text-decoration: underline !important;
 }
 
@@ -117,8 +121,8 @@
 //   }
 // }
 
-  .highlight-a{
-    a{
+.highlight-a {
+    a {
         color: $clr-accent-400;
     }
 }
@@ -130,9 +134,15 @@
 // }
 
 .lh-425 {
-  line-height: 1.125 !important;
+    line-height: 1.125 !important;
 }
 
 .lh-450 {
-  line-height: 1.5 !important;
+    line-height: 1.5 !important;
+}
+
+// Borders
+
+.border-clr-neutral-400 {
+    border-color: $clr-neutral-400;
 }
