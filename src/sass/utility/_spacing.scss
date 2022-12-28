@@ -86,6 +86,10 @@
   margin-bottom: 2rem;
 }
 
+.mb-650 {
+  margin-bottom: 3rem;
+}
+
 .mb-650-min-md {
   @include breakpoint(md) {
     margin-bottom: 3rem !important;
