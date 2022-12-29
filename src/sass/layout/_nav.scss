@@ -1,18 +1,22 @@
 @use '/src/sass/abstracts/' as *;
 @use '/src/sass/base/' as *;
 
-.nav{
-    .btn{
+.nav {
+    .btn {
         border-radius: 5px;
         padding: 0.5em 1em;
     }
 }
 
-.nav-menu{
+.nav-menu {
     border-top: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
+
     // padding-top: 0.5rem;
     // padding-bottom: 0.5rem;
+
+    // position: sticky !important;
+    // top: 0 !important;
 }
 
 
