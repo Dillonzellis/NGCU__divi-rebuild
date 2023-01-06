@@ -80,3 +80,13 @@
     order: 2;
   }
 }
+
+.grid-cols-3{
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.grid-cols-3-min-lg{
+  @include breakpoint(lg){
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}	
