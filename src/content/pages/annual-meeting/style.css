@@ -30,15 +30,29 @@
 }
 
 .text-content {
-  max-width: 92ch;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+  max-width: 97ch;
+  padding-inline: 0.75rem;
+
+  display: grid;
+  gap: 1.5rem;
 }
 
 @media (min-width: 768px) {
   .text-content {
-    padding-left: 4rem;
-    padding-right: 3rem;
+    padding-inline: 4rem;
+
+    gap: 2.5rem;
+  }
+}
+
+.header-container {
+  display: grid;
+  gap: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .header-container {
+    gap: 0.75rem;
   }
 }
 
@@ -46,29 +60,29 @@
   font-size: clamp(1.75rem, 3vw, 2.5rem);
   font-weight: 700;
   color: black;
-  margin-bottom: 0.9375rem;
+  /* margin-bottom: 0.9375rem; */
   line-height: 1 !important;
 }
 .sub-header {
   font-size: 1.25rem;
   font-weight: 500;
   color: #333333 !important;
-  margin-bottom: 2.6875rem;
+  /* margin-bottom: 2.6875rem; */
 }
 
 .body-text {
   font-size: 1.125rem;
   font-weight: 400;
   color: #333333 !important;
-  margin-bottom: 2.6875rem;
+  /* margin-bottom: 2.6875rem; */
 }
 
 .dates {
   display: grid;
   font-size: 1.25rem;
-  font-weight: 500;
+  font-weight: 600;
   color: #000000;
-  margin-bottom: 2.6875rem;
+  /* margin-bottom: 2.6875rem; */
 }
 
 .register-btn {
@@ -85,7 +99,7 @@
   margin: 4px 2px;
   cursor: pointer;
 
-  margin-bottom: 2.6875rem !important;
+  /* margin-bottom: 2.6875rem !important; */
 }
 
 .register-btn:hover {
@@ -94,7 +108,7 @@
 }
 
 .disclosure {
-  font-size: 1.125rem;
+  font-size: 1rem !important;
   font-weight: 400;
   color: #cd1041 !important;
 }
