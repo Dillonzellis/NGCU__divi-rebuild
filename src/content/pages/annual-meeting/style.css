@@ -101,11 +101,11 @@
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
+  transition: 0.5s ease-in-out;
 }
 
 .register-btn:hover {
   scale: 1.125;
-  transition: 0.5s;
 }
 
 .disclosure {
