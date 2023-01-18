@@ -41,18 +41,18 @@
   .text-content {
     padding-inline: 4rem;
 
-    gap: 2.5rem;
+    gap: 2rem;
   }
 }
 
 .header-container {
   display: grid;
-  gap: 0.5rem;
+  gap: 0.75rem;
 }
 
 @media (min-width: 768px) {
   .header-container {
-    gap: 0.75rem;
+    gap: 1rem;
   }
 }
 
@@ -60,46 +60,47 @@
   font-size: clamp(1.75rem, 3vw, 2.5rem);
   font-weight: 700;
   color: black;
-  /* margin-bottom: 0.9375rem; */
   line-height: 1 !important;
 }
+
+@media (min-width: 768px) {
+  .main-header {
+    line-height: 1.25 !important;
+  }
+}
+
 .sub-header {
   font-size: 1.25rem;
   font-weight: 500;
-  color: #333333 !important;
-  /* margin-bottom: 2.6875rem; */
+  color: hsl(0, 0%, 30%) !important;
 }
 
 .body-text {
   font-size: 1.125rem;
   font-weight: 400;
   color: #333333 !important;
-  /* margin-bottom: 2.6875rem; */
 }
 
 .dates {
   display: grid;
+  gap: 0.5rem;
   font-size: 1.25rem;
   font-weight: 600;
-  color: #000000;
-  /* margin-bottom: 2.6875rem; */
+  color: hsl(0, 0%, 0%);
 }
 
 .register-btn {
   background-color: #133052 !important;
   border: none;
-  border-radius: 0.2rem;
+  border-radius: 5px;
   color: white !important;
   font-size: 1.25rem;
   font-weight: 500;
-  padding: 0.5rem 1rem;
+  padding: 0.75em 1.5em;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  margin: 4px 2px;
   cursor: pointer;
-
-  /* margin-bottom: 2.6875rem !important; */
 }
 
 .register-btn:hover {
