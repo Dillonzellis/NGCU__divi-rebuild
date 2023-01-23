@@ -1,0 +1,45 @@
+@use '/src/sass/abstracts/' as *;
+@use '/src/sass/base/' as *;
+
+.gap-0 {
+    gap: 0;
+}
+
+.gap-0-min-md {
+    @include breakpoint(md) {
+        gap: 0;
+    }
+
+}
+
+// .gap-100-max-lg {
+//   @include breakpoint-down(lg) {
+//     gap: 0.25rem;
+//   }
+// }
+
+.gap-100 {
+    gap: 0.25rem;
+}
+
+.gap-200 {
+    gap: 0.5rem;
+}
+
+.gap-400 {
+    gap: 1rem;
+}
+
+.gap-500-min-md {
+    @include breakpoint(md) {
+        gap: 2rem;
+    }
+}
+
+.gap-500 {
+    gap: 2rem;
+}
+
+.gap-600 {
+    gap: 3rem;
+}

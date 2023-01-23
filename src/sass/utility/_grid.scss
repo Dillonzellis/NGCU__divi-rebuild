@@ -1,0 +1,48 @@
+@use '/src/sass/abstracts/' as *;
+@use '/src/sass/base/' as *;
+
+.grid {
+    display: grid;
+}
+
+.grid-2-col-min-md {
+    @include breakpoint(md) {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.grid-2-1-col-min-lg {
+    @include breakpoint(lg) {
+        grid-template-columns: 2fr 1fr;
+    }
+}
+
+.grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.grid-3-col-min-md {
+    @include breakpoint(md) {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.grid-cols-3-min-lg {
+    @include breakpoint(lg) {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+
+
+.grid-5-col-min-lg {
+    @include breakpoint(lg) {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+}
+
+// .grid-auto-flow-col-min-lg {
+//   @include breakpoint(lg) {
+//     grid-auto-flow: column;
+//   }
+// }
