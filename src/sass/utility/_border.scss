@@ -1,0 +1,26 @@
+@use "/src/sass/abstracts/" as *;
+@use "/src/sass/base/" as *;
+
+// BORDERS
+
+// .border-1 {
+//     border: 1px solid;
+// }
+
+// .border-b-1 {
+//     border-bottom: 1px solid;
+// }
+
+.border-b-8 {
+    border-bottom: 8px solid;
+}
+
+// BORDER COLORS
+
+.border-primary-400 {
+    border-color: $clr-primary-400;
+}
+
+.border-accent-400 {
+    border-color: $clr-accent-400;
+}

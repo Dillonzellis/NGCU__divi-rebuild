@@ -1,7 +1,16 @@
 @use "/src/sass/base/" as *;
 @use "/src/sass/abstracts/" as *;
+@use "/src/sass/abstracts/functions" as f;
 
 // Font Sizes
+
+.fs-20 {
+    font-size: f.rem(20);
+}
+
+.fs-24 {
+    font-size: f.rem(24);
+}
 
 .fs-300 {
     font-size: $fs-300;
