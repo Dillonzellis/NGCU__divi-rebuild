@@ -36,3 +36,19 @@
 //         margin-left: 2rem !important;
 //     }
 // }
+
+.ea-card {
+    background: transparent !important;
+
+    .ea-header {
+        a {
+            color: #000 !important;
+            font-weight: 500 !important;
+        }
+
+        .ea-expand-icon {
+            color: $clr-accent-400 !important;
+        }
+    }
+
+}
