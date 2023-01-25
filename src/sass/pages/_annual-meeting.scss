@@ -1,0 +1,115 @@
+.annual-meeting-23 * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.annual-meeting-23 {
+    font-family: "Ubuntu", sans-serif;
+    max-width: 1180px;
+    margin-inline: auto;
+}
+
+.hero-img {
+    width: 100%;
+    border-bottom: 12px solid #003876;
+    margin-bottom: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .hero-img {
+        margin-bottom: 3.5rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .wrapper {
+        border-left: 1px solid hsl(0, 0%, 90%);
+        border-right: 1px solid hsl(0, 0%, 90%);
+    }
+}
+
+.text-content {
+    max-width: 97ch;
+    padding-inline: 0.75rem;
+
+    display: grid;
+    gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .text-content {
+        padding-inline: 4rem;
+
+        gap: 2rem;
+    }
+}
+
+.header-container {
+    display: grid;
+    gap: 0.75rem;
+}
+
+@media (min-width: 768px) {
+    .header-container {
+        gap: 1rem;
+    }
+}
+
+.main-header {
+    font-size: clamp(1.75rem, 3vw, 2.5rem);
+    font-weight: 700;
+    color: black;
+    line-height: 1 !important;
+}
+
+@media (min-width: 768px) {
+    .main-header {
+        line-height: 1.25 !important;
+    }
+}
+
+.sub-header {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: hsl(0, 0%, 30%) !important;
+}
+
+.body-text {
+    font-size: 1.125rem;
+    font-weight: 400;
+    color: #333333 !important;
+}
+
+.dates {
+    display: grid;
+    gap: 0.5rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: hsl(0, 0%, 0%);
+}
+
+.register-btn {
+    background-color: #133052 !important;
+    border: none;
+    border-radius: 5px;
+    color: white !important;
+    font-size: 1.25rem;
+    font-weight: 500;
+    padding: 0.75em 1.5em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+.register-btn:hover {
+    scale: 1.125;
+}
+
+.disclosure {
+    font-size: 1rem !important;
+    font-weight: 400;
+    color: #cd1041 !important;
+}
