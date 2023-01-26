@@ -1,7 +1,23 @@
 @use "/src/sass/abstracts/" as *;
 @use "/src/sass/base/" as *;
 
+
+// MARGIN BLOCK
+.my-4-5{
+    margin-top: 4.5rem;
+    margin-bottom: 4.5rem;
+}
+
 // MARGINS BOTTOM
 .mb-2 {
     margin-bottom: 2rem;
+}
+
+.mb-4-5 {
+    margin-bottom: 4.5rem;
+}
+
+// MARGIN TOP
+.mt-4-5 {
+    margin-top: 4.5rem;
 }

@@ -3,16 +3,12 @@
 
 
 .card {
-
-    // max-width: rem(370);
-    // max-height: rem(286);
+    width: clamp(200px, 70%, 370px);
 
     text-align: center;
 
     border: solid 1px $clr-primary-400;
     border-radius: 15px;
-
-    // padding: rem(25);
 
     transform: scale(1);
     transition: transform 200ms ease;
@@ -27,13 +23,7 @@
     }
 
     &__content{
-        padding: 1rem 1.5rem;
-        max-width: rem(300);
-        @include breakpoint(sm){
-            padding: 2rem 6rem;
-            max-width: 350px;
-            max-height: 300px;
-        }
+        padding: 2rem 1rem
     }
 
     .fa-fas {

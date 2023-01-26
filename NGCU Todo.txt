@@ -1,6 +1,4 @@
 NGCU Todo
 
--links and resources modals/carfax modal/others are broke
-
 BROKEN LINKS
 -https://www.ngcu.org/regular-savings/(on member benefits page)
