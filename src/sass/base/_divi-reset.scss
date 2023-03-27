@@ -48,21 +48,21 @@ p {
 }
 
 a:focus {
-  outline: dashed var(--clr-tertiary-400) !important;
+  outline: dashed red !important;
 }
 
 input:focus {
-  outline: dashed var(--clr-tertiary-400);
+  outline: dashed red;
 }
 
 iframe:focus {
-  outline: dashed var(--clr-tertiary-400);
+  outline: dashed red;
 }
 
 button:focus {
-  outline: dashed var(--clr-tertiary-400) !important;
+  outline: dashed red !important;
 }
 
 .mega-indicator:focus {
-  outline: dashed var(--clr-tertiary-400) !important;
+  outline: dashed red !important;
 }
