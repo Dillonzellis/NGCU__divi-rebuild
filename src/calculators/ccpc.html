@@ -1,0 +1,120 @@
+<html lang="en">
+  <head>
+    <title>
+      InternetActive Calculators: Credit Card Payoff Calculator
+    </title>
+    <!--InternetActive Calculators�-->
+    <!--Version 2.0-->
+    <!--Copyright � 1998 - 2001 Desert Cactus Software Corporation-->
+
+    <script language="JavaScript" src="style.js"></script>
+
+    <script language="JavaScript" src="ccpcv.js"></script>
+  </head>
+
+  <body
+    bgcolor="#FFFFFF"
+    text="#000000"
+    link="#000099"
+    vlink="#9999FF"
+    alink="#CC0000"
+    leftmargin="0"
+    topmargin="0"
+    marginwidth="0"
+    marginheight="0"
+  >
+    <table width="500" role="presentation">
+      <tr>
+        <td>
+          <center></center>
+          <form action="ccpcr.html">
+            <center>
+              <table border="1" cellpadding="7" role="presentation">
+                <tr>
+                  <td colspan="2" bgcolor="#FFFFEE">
+                    <center>
+                      <h1 style="font-size: 1.125em">
+                        <span class="FontTwo"
+                          ><strong
+                            >InternetActive Calculators�</strong
+                          >
+                        </span>
+                        <br />
+                        <span class="FontThree">
+                          <strong
+                            >Credit Card Payoff Calculator</strong
+                          ></span
+                        >
+                      </h1>
+                    </center>
+                  </td>
+                </tr>
+                <tr></tr>
+                <tr>
+                  <td bgcolor="#EEEEEE">
+                    <span class="FontFour"> Monthly Payment: </span>
+                  </td>
+                  <td bgcolor="#EEFFEE">
+                    <input
+                      name="MonthlyPayment"
+                      style="
+                        font-family: Verdana, Arial;
+                        font-size: 8pt;
+                      "
+                      title="Monthly Payment"
+                      onFocus="select();"
+                      onBlur="checkMP(this.form);"
+                      value="100"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td bgcolor="#EEEEEE">
+                    <span class="FontFour">
+                      Credit Card Balance:
+                    </span>
+                  </td>
+                  <td bgcolor="#FFEEEE">
+                    <input
+                      name="CreditCardBalance"
+                      style="
+                        font-family: Verdana, Arial;
+                        font-size: 8pt;
+                      "
+                      title="Credit Card Balance"
+                      onFocus="select();"
+                      onBlur="checkCCB(this.form);"
+                      value="2500"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td bgcolor="#EEEEEE">
+                    <span class="FontFour"> Interest Rate: </span>
+                  </td>
+                  <td bgcolor="#EEEEFF">
+                    <input
+                      name="InterestRate"
+                      style="
+                        font-family: Verdana, Arial;
+                        font-size: 8pt;
+                      "
+                      title="Interest Rate"
+                      onFocus="select();"
+                      onBlur="checkIR(this.form);"
+                      value="19.8"
+                    />
+                  </td>
+                </tr>
+              </table>
+              <script language="JavaScript" src="enda.js"></script>
+            </center>
+          </form>
+        </td>
+      </tr>
+    </table>
+    <a href="https://www.ngcu.org/" style="margin-left: 4rem"
+      >Site Map</a
+    >
+  </body>
+</html>

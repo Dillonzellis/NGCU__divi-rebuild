@@ -1,0 +1,217 @@
+<html lang="en">
+  <head>
+    <title>InternetActive Calculators: Refinance Calculator</title>
+    <!--InternetActive Calculators�-->
+    <!--Version 2.0-->
+    <!--Copyright � 1998 - 2001 Desert Cactus Software Corporation-->
+
+    <script language="JavaScript" src="style.js"></script>
+
+    <script language="JavaScript" src="rfcv.js"></script>
+  </head>
+
+  <body
+    bgcolor="#FFFFFF"
+    text="#000000"
+    link="#000099"
+    vlink="#9999FF"
+    alink="#CC0000"
+    leftmargin="0"
+    topmargin="0"
+    marginwidth="0"
+    marginheight="0"
+  >
+    <table width="500" role="presentation">
+      <tr>
+        <td>
+          <center></center>
+          <form action="rfcr.html">
+            <center>
+              <table border="1" cellpadding="7" role="presentation">
+                <tr>
+                  <td colspan="2" bgcolor="#FFFFEE">
+                    <center>
+                      <h1 style="font-size: 1.125em">
+                        <span class="FontTwo"
+                          ><strong
+                            >InternetActive Calculators�</strong
+                          >
+                        </span>
+                        <br />
+                        <span class="FontThree">
+                          <strong>Refinance Calculator</strong></span
+                        >
+                      </h1>
+                    </center>
+                  </td>
+                </tr>
+                <tr></tr>
+                <tr>
+                  <td bgcolor="#EEEEEE">
+                    <span class="FontFour"> Current Payment: </span>
+                  </td>
+                  <td bgcolor="#EEFFEE">
+                    <input
+                      name="CurrentPayment"
+                      style="
+                        font-family: Verdana, Arial;
+                        font-size: 8pt;
+                      "
+                      title="Current Payment"
+                      onFocus="select();"
+                      onBlur="checkCP(this.form);"
+                      value="2500"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2" bgcolor="#FFFFEE">
+                    <span class="FontFour">
+                      <strong> Proposed Mortgage </strong>
+                    </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td bgcolor="#EEEEEE">
+                    <span class="FontFour"> Loan Amount: </span>
+                  </td>
+                  <td bgcolor="#FFEEEE">
+                    <input
+                      name="LoanAmount"
+                      style="
+                        font-family: Verdana, Arial;
+                        font-size: 8pt;
+                      "
+                      title="Loan Amount"
+                      onFocus="select();"
+                      onBlur="checkLA(this.form);"
+                      value="250000"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td bgcolor="#EEEEEE">
+                    <span class="FontFour"> Interest Rate: </span>
+                  </td>
+                  <td bgcolor="#EEEEFF">
+                    <input
+                      name="InterestRate"
+                      style="
+                        font-family: Verdana, Arial;
+                        font-size: 8pt;
+                      "
+                      title="Interest Rate"
+                      onFocus="select();"
+                      onBlur="checkIR(this.form);"
+                      value="8"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td bgcolor="#EEEEEE">
+                    <span class="FontFour"> Number of Years: </span>
+                  </td>
+                  <td bgcolor="#FFEEFF">
+                    <input
+                      name="NumberOfYears"
+                      style="
+                        font-family: Verdana, Arial;
+                        font-size: 8pt;
+                      "
+                      title="Number of Years"
+                      onFocus="select();"
+                      onBlur="checkY(this.form);"
+                      value="30"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td bgcolor="#EEEEEE">
+                    <span class="FontFour">
+                      Mortgage Closing Costs:
+                    </span>
+                  </td>
+                  <td bgcolor="#EEFFEE">
+                    <input
+                      name="MortgageClosingCosts"
+                      style="
+                        font-family: Verdana, Arial;
+                        font-size: 8pt;
+                      "
+                      title="Mortgage Closing Costs"
+                      onFocus="select();"
+                      onBlur="checkMCC(this.form);"
+                      value="500"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td bgcolor="#EEEEEE">
+                    <span class="FontFour"> Mortgage Points: </span>
+                  </td>
+                  <td bgcolor="#FFEEEE">
+                    <select
+                      name="MortgagePoints"
+                      size="1"
+                      style="
+                        font-family: Verdana, Arial;
+                        font-size: 8pt;
+                      "
+                      title="Mortgage Points"
+                    >
+                      <option selected value="0.000">0.000%</option>
+                      <option value="0.125">0.125%</option>
+                      <option value="0.250">0.250%</option>
+                      <option value="0.375">0.375%</option>
+                      <option value="0.500">0.500%</option>
+                      <option value="0.625">0.625%</option>
+                      <option value="0.750">0.750%</option>
+                      <option value="0.875">0.875%</option>
+                      <option value="1.000">1.000%</option>
+                      <option value="1.125">1.125%</option>
+                      <option value="1.250">1.250%</option>
+                      <option value="1.375">1.375%</option>
+                      <option value="1.500">1.500%</option>
+                      <option value="1.625">1.625%</option>
+                      <option value="1.750">1.750%</option>
+                      <option value="1.875">1.875%</option>
+                      <option value="2.000">2.000%</option>
+                      <option value="2.125">2.125%</option>
+                      <option value="2.250">2.250%</option>
+                      <option value="2.375">2.375%</option>
+                      <option value="2.500">2.500%</option>
+                      <option value="2.625">2.625%</option>
+                      <option value="2.750">2.750%</option>
+                      <option value="2.875">2.875%</option>
+                      <option value="3.000">3.000%</option>
+                      <option value="3.125">3.125%</option>
+                      <option value="3.250">3.250%</option>
+                      <option value="3.375">3.375%</option>
+                      <option value="3.500">3.500%</option>
+                      <option value="3.625">3.625%</option>
+                      <option value="3.750">3.750%</option>
+                      <option value="3.875">3.875%</option>
+                      <option value="4.000">4.000%</option>
+                      <option value="4.125">4.125%</option>
+                      <option value="4.250">4.250%</option>
+                      <option value="4.375">4.375%</option>
+                      <option value="4.500">4.500%</option>
+                      <option value="4.625">4.625%</option>
+                      <option value="4.750">4.750%</option>
+                      <option value="4.875">4.875%</option>
+                      <option value="5.000">5.000%</option>
+                    </select>
+                  </td>
+                </tr>
+              </table>
+              <script language="JavaScript" src="enda.js"></script>
+            </center>
+          </form>
+        </td>
+      </tr>
+    </table>
+    <a href="https://www.ngcu.org/" style="margin-left: 4rem"
+      >Site Map</a
+    >
+  </body>
+</html>

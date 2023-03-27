@@ -46,3 +46,23 @@ p {
 .et_pb_row {
   padding: 0;
 }
+
+a:focus {
+  outline: dashed var(--clr-tertiary-400) !important;
+}
+
+input:focus {
+  outline: dashed var(--clr-tertiary-400);
+}
+
+iframe:focus {
+  outline: dashed var(--clr-tertiary-400);
+}
+
+button:focus {
+  outline: dashed var(--clr-tertiary-400) !important;
+}
+
+.mega-indicator:focus {
+  outline: dashed var(--clr-tertiary-400) !important;
+}

@@ -1,0 +1,197 @@
+<html lang="en">
+  <head>
+    <title>InternetActive Calculators: Car Loan Calculator</title>
+    <!--InternetActive Calculators�-->
+    <!--Version 2.0-->
+    <!--Copyright � 1998 - 2001 Desert Cactus Software Corporation-->
+
+    <script language="JavaScript" src="style.js"></script>
+
+    <script language="JavaScript" src="clcv.js"></script>
+  </head>
+
+  <body
+    bgcolor="#FFFFFF"
+    text="#000000"
+    link="#000099"
+    vlink="#9999FF"
+    alink="#CC0000"
+    leftmargin="0"
+    topmargin="0"
+    marginwidth="0"
+    marginheight="0"
+  >
+    <table width="500" role="presentation">
+      <tr>
+        <td>
+          <center>
+            <br />
+            <br />
+          </center>
+          <form action="clcr.html">
+            <center>
+              <table border="1" cellpadding="7" role="presentation">
+                <tr>
+                  <td colspan="2" bgcolor="#FFFFEE">
+                    <center>
+                      <h1 style="font-size: 1.125em">
+                        <span class="FontTwo"
+                          ><strong
+                            >InternetActive Calculators�</strong
+                          >
+                        </span>
+                        <br />
+                        <span class="FontThree">
+                          <strong>Auto Loan Calculator</strong></span
+                        >
+                      </h1>
+                    </center>
+                  </td>
+                </tr>
+                <tr></tr>
+                <tr>
+                  <td bgcolor="#EEEEEE">
+                    <span class="FontFour"> Cost of Vehicle: </span>
+                  </td>
+                  <td bgcolor="#EEFFEE">
+                    <input
+                      name="CostOfVehicle"
+                      style="
+                        font-family: Verdana, Arial;
+                        font-size: 8pt;
+                      "
+                      title="Cost of Vehicle"
+                      onFocus="select();"
+                      onBlur="checkCOV(this.form);"
+                      value="25000"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td bgcolor="#EEEEEE">
+                    <span class="FontFour"> Down Payment: </span>
+                  </td>
+                  <td bgcolor="#FFEEEE">
+                    <input
+                      name="DownPayment"
+                      style="
+                        font-family: Verdana, Arial;
+                        font-size: 8pt;
+                      "
+                      title="Down Payment"
+                      onFocus="select();"
+                      onBlur="checkDP(this.form);"
+                      value="5000"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td bgcolor="#EEEEEE">
+                    <span class="FontFour">
+                      Vehicle Trade-In Value (if any):
+                    </span>
+                  </td>
+                  <td bgcolor="#EEEEFF">
+                    <input
+                      name="TradeInValue"
+                      style="
+                        font-family: Verdana, Arial;
+                        font-size: 8pt;
+                      "
+                      title="Vehicle Trade-In"
+                      onFocus="select();"
+                      onBlur="checkTIV(this.form);"
+                      value="2000"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td bgcolor="#EEEEEE">
+                    <span class="FontFour"> Interest Rate: </span>
+                  </td>
+                  <td bgcolor="#FFEEFF">
+                    <input
+                      name="InterestRate"
+                      style="
+                        font-family: Verdana, Arial;
+                        font-size: 8pt;
+                      "
+                      title="Interest Rate"
+                      onFocus="select();"
+                      onBlur="checkIR(this.form);"
+                      value="8"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td bgcolor="#EEEEEE">
+                    <span class="FontFour"> Number of Months: </span>
+                  </td>
+                  <td bgcolor="#EEFFEE">
+                    <input
+                      name="NumberOfMonths"
+                      style="
+                        font-family: Verdana, Arial;
+                        font-size: 8pt;
+                      "
+                      title="Number of Months"
+                      onFocus="select();"
+                      onBlur="checkM(this.form);"
+                      value="48"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td bgcolor="#EEEEEE">
+                    <span class="FontFour">
+                      Additional Principal Per Month:
+                    </span>
+                  </td>
+                  <td bgcolor="#FFEEEE">
+                    <input
+                      name="AdditionalPrincipal"
+                      style="
+                        font-family: Verdana, Arial;
+                        font-size: 8pt;
+                      "
+                      title="Additional Principal Per Month"
+                      onFocus="select();"
+                      onBlur="checkAD(this.form);"
+                      value="0"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2" bgcolor="#FFFFEE">
+                    <span class="FontFive">
+                      <input
+                        name="calculate_option"
+                        type="radio"
+                        title="Payment Only"
+                        value="0"
+                        checked
+                      />
+                      Calculate Payment Only<br />
+                      <input
+                        name="calculate_option"
+                        type="radio"
+                        title="Payment and Display Amortization Schedule"
+                        value="1"
+                      />
+                      Calculate Payment and Display Amortization
+                      Schedule<br />
+                    </span>
+                  </td>
+                </tr>
+              </table>
+              <script language="JavaScript" src="enda.js"></script>
+            </center>
+          </form>
+        </td>
+      </tr>
+    </table>
+    <a href="https://www.ngcu.org/" style="margin-left: 4rem"
+      >Site Map</a
+    >
+  </body>
+</html>

@@ -1,0 +1,178 @@
+<html lang="en">
+  <head>
+    <title>
+      InternetActive Calculators: Variable Rate Mortgage Calculator
+    </title>
+    <!--InternetActive Calculators�-->
+    <!--Version 2.0-->
+    <!--Copyright � 1998 - 2001 Desert Cactus Software Corporation-->
+
+    <script language="JavaScript" src="style.js"></script>
+
+    <script language="JavaScript" src="vrmcv.js"></script>
+  </head>
+
+  <body
+    bgcolor="#FFFFFF"
+    text="#000000"
+    link="#000099"
+    vlink="#9999FF"
+    alink="#CC0000"
+    leftmargin="0"
+    topmargin="0"
+    marginwidth="0"
+    marginheight="0"
+  >
+    <table width="500" role="presentation">
+      <tr>
+        <td>
+          <center></center>
+          <form action="vrmcr.html">
+            <center>
+              <table border="1" cellpadding="7" role="presentation">
+                <tr>
+                  <td colspan="2" bgcolor="#FFFFEE">
+                    <center>
+                      <h1 style="font-size: 1.125em">
+                        <span class="FontTwo"
+                          ><strong
+                            >InternetActive Calculators�</strong
+                          >
+                        </span>
+                        <br />
+                        <span class="FontThree">
+                          <strong
+                            >Variable Rate Mortgage Calculator</strong
+                          ></span
+                        >
+                      </h1>
+                    </center>
+                  </td>
+                </tr>
+                <tr></tr>
+                <tr>
+                  <td bgcolor="#EEEEEE">
+                    <span class="FontFour"> Loan Amount: </span>
+                  </td>
+                  <td bgcolor="#EEFFEE">
+                    <input
+                      name="LoanAmount"
+                      style="
+                        font-family: Verdana, Arial;
+                        font-size: 8pt;
+                      "
+                      title="Loan Amount"
+                      onFocus="select();"
+                      onBlur="checkLA(this.form);"
+                      value="250000"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td bgcolor="#EEEEEE">
+                    <span class="FontFour"> Number of Months: </span>
+                  </td>
+                  <td bgcolor="#FFEEEE">
+                    <input
+                      name="NumberOfMonths"
+                      style="
+                        font-family: Verdana, Arial;
+                        font-size: 8pt;
+                      "
+                      title="Number of Months"
+                      onFocus="select();"
+                      onBlur="checkM(this.form);"
+                      value="360"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td bgcolor="#EEEEEE">
+                    <span class="FontFour">
+                      Beginning Interest Rate:
+                    </span>
+                  </td>
+                  <td bgcolor="#EEEEFF">
+                    <span class="FontFour">
+                      <script language="JavaScript">
+                        document.write("" + (SR * 100.0) / 100 + "%");
+                      </script>
+                    </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td bgcolor="#EEEEEE">
+                    <span class="FontFour">
+                      Ending Interest Rate:
+                    </span>
+                  </td>
+                  <td bgcolor="#FFEEFF">
+                    <span class="FontFour">
+                      <script language="JavaScript">
+                        document.write("" + (ER * 100.0) / 100 + "%");
+                      </script>
+                    </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td bgcolor="#EEEEEE">
+                    <span class="FontFour">
+                      Incremental Rate of Interest:
+                    </span>
+                  </td>
+                  <td bgcolor="#EEFFEE">
+                    <span class="FontFour">
+                      <script language="JavaScript">
+                        document.write("" + (IR * 100.0) / 100 + "%");
+                      </script>
+                    </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td bgcolor="#EEEEEE">
+                    <span class="FontFour">
+                      Number of Rate Changes over Life of Loan:
+                    </span>
+                  </td>
+                  <td bgcolor="#FFEEEE">
+                    <span class="FontFour">
+                      <script language="JavaScript">
+                        document.write(NORC);
+                      </script>
+                    </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2" bgcolor="#FFFFEE">
+                    <span class="FontFive">
+                      <input
+                        name="calculate_option"
+                        type="radio"
+                        title="Payment Only"
+                        value="0"
+                        checked
+                      />
+                      Calculate Payment Only<br />
+                      <input
+                        name="calculate_option"
+                        type="radio"
+                        title="Payment and Display Amortization Schedule"
+                        value="1"
+                      />
+                      Calculate Payment and Display Amortization
+                      Schedule<br />
+                    </span>
+                  </td>
+                </tr>
+              </table>
+              <script language="JavaScript" src="enda.js"></script>
+            </center>
+          </form>
+        </td>
+      </tr>
+    </table>
+    <a href="https://www.ngcu.org/" style="margin-left: 4rem"
+      >Site Map</a
+    >
+  </body>
+</html>

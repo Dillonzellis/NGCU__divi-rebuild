@@ -1,0 +1,282 @@
+<html lang="en">
+  <head>
+    <title>InternetActive Calculators: Savings Calculator</title>
+    <!--InternetActive Calculators�-->
+    <!--Version 2.0-->
+    <!--Copyright � 1998 - 2001 Desert Cactus Software Corporation-->
+
+    <script language="JavaScript" src="style.js"></script>
+
+    <script language="JavaScript" src="scv.js"></script>
+  </head>
+
+  <body
+    bgcolor="#FFFFFF"
+    text="#000000"
+    link="#000099"
+    vlink="#9999FF"
+    alink="#CC0000"
+    leftmargin="0"
+    topmargin="0"
+    marginwidth="0"
+    marginheight="0"
+  >
+    <table width="500" role="presentation">
+      <tr>
+        <td>
+          <center></center>
+          <form action="scr.html">
+            <center>
+              <table border="1" cellpadding="7" role="presentation">
+                <tr>
+                  <td colspan="2" bgcolor="#FFFFEE">
+                    <center>
+                      <h1 style="font-size: 1.125em">
+                        <span class="FontTwo"
+                          ><strong
+                            >InternetActive Calculators�</strong
+                          >
+                        </span>
+                        <br />
+                        <span class="FontThree">
+                          <strong>Savings Calculator</strong></span
+                        >
+                      </h1>
+                    </center>
+                  </td>
+                </tr>
+                <tr></tr>
+                <tr>
+                  <td colspan="2" bgcolor="#EEEEEE">
+                    <span class="FontFour">
+                      <input
+                        name="calculate_option"
+                        type="radio"
+                        title="Ending Balance 1"
+                        value="0"
+                        checked
+                      />
+                      <strong>Calculate the Ending Balance</strong
+                      ><br />
+                      (Hint: Enter amounts in the
+                      <u>Beginning Balance</u> and
+                      <u>Periodic Contribution</u> boxes.)<br />
+                      <br />
+
+                      <input
+                        name="calculate_option"
+                        type="radio"
+                        title="Beginning Balance 1"
+                        value="1"
+                      />
+                      <strong>Calculate the Beginning Balance</strong
+                      ><br />
+                      (Hint: Enter amounts in the
+                      <u>Periodic Contribution</u> and
+                      <u>Ending Balance</u> boxes.)<br />
+                      <br />
+
+                      <input
+                        name="calculate_option"
+                        type="radio"
+                        title="Periodic Contribution 1"
+                        value="2"
+                      />
+                      <strong
+                        >Calculate the Periodic Contribution</strong
+                      ><br />
+                      (Hint: Enter amounts in the
+                      <u>Beginning Balance</u> and
+                      <u>Ending Balance</u> boxes.)<br />
+                      <br />
+                    </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td bgcolor="#EEEEEE">
+                    <span class="FontFour"> Beginning Balance: </span>
+                  </td>
+                  <td bgcolor="#EEFFEE">
+                    <input
+                      name="BeginningBalance"
+                      style="
+                        font-family: Verdana, Arial;
+                        font-size: 8pt;
+                      "
+                      title="Beginning Balance"
+                      onFocus="select();"
+                      onBlur="checkBB(this.form);"
+                      value="0"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td bgcolor="#EEEEEE">
+                    <span class="FontFour"> Interest Rate: </span>
+                  </td>
+                  <td bgcolor="#FFEEEE">
+                    <input
+                      name="InterestRate"
+                      style="
+                        font-family: Verdana, Arial;
+                        font-size: 8pt;
+                      "
+                      title="Interest Rate"
+                      onFocus="select();"
+                      onBlur="checkIR(this.form);"
+                      value="8"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td bgcolor="#EEEEEE">
+                    <span class="FontFour">
+                      Periodic Contribution:
+                    </span>
+                  </td>
+                  <td bgcolor="#EEEEFF">
+                    <input
+                      name="PeriodicContribution"
+                      style="
+                        font-family: Verdana, Arial;
+                        font-size: 8pt;
+                      "
+                      title="Periodic Contribution"
+                      onFocus="select();"
+                      onBlur="checkPC(this.form);"
+                      value="0"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td bgcolor="#EEEEEE">
+                    <span class="FontFour"> Number of Periods: </span>
+                  </td>
+                  <td bgcolor="#FFEEFF">
+                    <input
+                      name="NumberOfPeriods"
+                      style="
+                        font-family: Verdana, Arial;
+                        font-size: 8pt;
+                      "
+                      title="Number of Periods"
+                      onFocus="select();"
+                      onBlur="checkNP(this.form);"
+                      value="0"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td bgcolor="#EEEEEE">
+                    <span class="FontFour"> Ending Balance: </span>
+                  </td>
+                  <td bgcolor="#EEFFEE">
+                    <input
+                      name="EndingBalance"
+                      style="
+                        font-family: Verdana, Arial;
+                        font-size: 8pt;
+                      "
+                      title="Ending Balance"
+                      onFocus="select();"
+                      onBlur="checkEB(this.form);"
+                      value="0"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2" bgcolor="#FFFFEE">
+                    <span class="FontFour">
+                      <input
+                        name="compound_option"
+                        type="radio"
+                        title="Weekly Basis"
+                        value="0"
+                      />
+                      Compound on a Weekly Basis<br />
+                      <input
+                        name="compound_option"
+                        type="radio"
+                        title="Monthly Basis"
+                        value="1"
+                        checked
+                      />
+                      Compound on a Monthly Basis<br />
+                      <input
+                        name="compound_option"
+                        type="radio"
+                        title="Quarterly Basis"
+                        value="2"
+                      />
+                      Compound on a Quarterly Basis<br />
+                      <input
+                        name="compound_option"
+                        type="radio"
+                        title="Annual Basis"
+                        value="3"
+                      />
+                      Compound on an Annual Basis<br />
+                    </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2" bgcolor="#FFFFEE">
+                    <span class="FontFive">
+                      <strong>
+                        <input
+                          name="today"
+                          type="checkbox"
+                          title="Show Ending Balance"
+                          value="1"
+                          checked
+                        />
+                        Show Ending Balance in Current Dollars</strong
+                      ><br />
+                      (Hint: Check this box to show the ending balance
+                      in today's dollars.)<br />
+
+                      <strong>
+                        <input
+                          name="inflation"
+                          type="checkbox"
+                          title="Adjust for Inflation"
+                          value="0"
+                        />
+                        Adjust for Inflation</strong
+                      ><br />
+                      (Hint: Check this box to inflate the periodic
+                      contributions.)<br />
+                      <br />
+                    </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td bgcolor="#EEEEEE">
+                    <span class="FontFour"> Inflation Rate: </span>
+                  </td>
+                  <td bgcolor="#FFEEEE">
+                    <input
+                      name="InflationRate"
+                      style="
+                        font-family: Verdana, Arial;
+                        font-size: 8pt;
+                      "
+                      title="Inflation Rate"
+                      onFocus="select();"
+                      onBlur="checkInf(this.form);"
+                      value="3"
+                    />
+                  </td>
+                </tr>
+              </table>
+              <script Langugage="JavaScript" src="enda.js"></script>
+            </center>
+          </form>
+        </td>
+      </tr>
+    </table>
+    <a href="https://www.ngcu.org/" style="margin-left: 4rem"
+      >Site Map</a
+    >
+  </body>
+</html>

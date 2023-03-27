@@ -1,0 +1,294 @@
+<html lang="en">
+  <head>
+    <title>InternetActive Calculators: Retirement Calculator</title>
+    <!--InternetActive Calculators�-->
+    <!--Version 2.0-->
+    <!--Copyright � 1998 - 2001 Desert Cactus Software Corporation-->
+
+    <script language="JavaScript" src="style.js"></script>
+
+    <script language="JavaScript" src="rcv.js"></script>
+  </head>
+
+  <body
+    bgcolor="#FFFFFF"
+    text="#000000"
+    link="#000099"
+    vlink="#9999FF"
+    alink="#CC0000"
+    leftmargin="0"
+    topmargin="0"
+    marginwidth="0"
+    marginheight="0"
+  >
+    <table width="500" role="presentation">
+      <tr>
+        <td>
+          <center></center>
+          <form action="rcr.html">
+            <center>
+              <table border="1" cellpadding="7" role="presentation">
+                <tr>
+                  <td colspan="2" bgcolor="#FFFFEE">
+                    <center>
+                      <h1 style="font-size: 1.125em">
+                        <span class="FontTwo"
+                          ><strong
+                            >InternetActive Calculators�</strong
+                          >
+                        </span>
+                        <br />
+                        <span class="FontThree">
+                          <strong>Retirement Calculator</strong></span
+                        >
+                      </h1>
+                    </center>
+                  </td>
+                </tr>
+                <tr></tr>
+                <tr>
+                  <td colspan="2" bgcolor="#EEEEEE">
+                    <span class="FontFour">
+                      <input
+                        name="calculate_option"
+                        type="radio"
+                        title="Annual Income After Retirement"
+                        value="0"
+                        checked
+                      />
+                      <strong
+                        >Calculate the Annual Income You Will Receive
+                        After Retirement</strong
+                      ><br />
+                      (Hint: Enter amounts in the
+                      <u>Beginning Balance</u> and the
+                      <u>Annual Contribution</u> boxes, as well as the
+                      age parameters.)<br />
+                      <br />
+
+                      <input
+                        name="calculate_option"
+                        type="radio"
+                        title="Annual Contribution 1"
+                        value="1"
+                      />
+                      <strong
+                        >Calculate the Annual Contribution You Must
+                        Make Before Retirement</strong
+                      ><br />
+                      (Hint: Enter amounts in the
+                      <u>Beginning Balance</u> and the
+                      <u>Annual Income</u> boxes,<br />
+                      as well as the age parameters.)<br />
+                      <br />
+
+                      <input
+                        name="calculate_option"
+                        type="radio"
+                        title="Beginning Balance Required"
+                        value="2"
+                      />
+                      <strong
+                        >Calculate the Beginning Balance Required in
+                        Your Retirement Account</strong
+                      ><br />
+                      (Hint: Enter amounts in the
+                      <u>Annual Contribution</u> and the
+                      <u>Annual Income</u> boxes,<br />
+                      as well as the age parameters.)<br />
+                      <br />
+                    </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td bgcolor="#EEEEEE">
+                    <span class="FontFour"> Beginning Balance: </span>
+                  </td>
+                  <td bgcolor="#EEFFEE">
+                    <input
+                      name="Principal"
+                      style="
+                        font-family: Verdana, Arial;
+                        font-size: 8pt;
+                      "
+                      title="Beginning Balance"
+                      onFocus="select();"
+                      onBlur="checkPR(this.form);"
+                      value="0"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td bgcolor="#EEEEEE">
+                    <span class="FontFour"> Interest Rate: </span>
+                  </td>
+                  <td bgcolor="#FFEEEE">
+                    <input
+                      name="InterestRate"
+                      style="
+                        font-family: Verdana, Arial;
+                        font-size: 8pt;
+                      "
+                      title="Interest Rate"
+                      onFocus="select();"
+                      onBlur="checkIR(this.form);"
+                      value="8"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td bgcolor="#EEEEEE">
+                    <span class="FontFour">
+                      Annual Contribution:
+                    </span>
+                  </td>
+                  <td bgcolor="#EEEEFF">
+                    <input
+                      name="AnnualContribution"
+                      style="
+                        font-family: Verdana, Arial;
+                        font-size: 8pt;
+                      "
+                      title="Annual Contribution"
+                      onFocus="select();"
+                      onBlur="checkAC(this.form);"
+                      value="0"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td bgcolor="#EEEEEE">
+                    <span class="FontFour"> Annual Income: </span>
+                  </td>
+                  <td bgcolor="#FFEEFF">
+                    <input
+                      name="AnnualIncome"
+                      style="
+                        font-family: Verdana, Arial;
+                        font-size: 8pt;
+                      "
+                      title="Annual Income"
+                      onFocus="select();"
+                      onBlur="checkAI(this.form);"
+                      value="0"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td bgcolor="#EEEEEE">
+                    <span class="FontFour"> Present Age: </span>
+                  </td>
+                  <td bgcolor="#EEFFEE">
+                    <input
+                      name="PresentAge"
+                      style="
+                        font-family: Verdana, Arial;
+                        font-size: 8pt;
+                      "
+                      title="Present Age"
+                      onFocus="select();"
+                      onBlur="checkPresAge(this.form);"
+                      value="35"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td bgcolor="#EEEEEE">
+                    <span class="FontFour"> Retirement Age: </span>
+                  </td>
+                  <td bgcolor="#FFEEEE">
+                    <input
+                      name="RetirementAge"
+                      style="
+                        font-family: Verdana, Arial;
+                        font-size: 8pt;
+                      "
+                      title="Retirement Age"
+                      onFocus="select();"
+                      onBlur="checkRetAge(this.form);"
+                      value="65"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td bgcolor="#EEEEEE">
+                    <span class="FontFour">
+                      Age At Which Retirement Withdrawals Will End:
+                    </span>
+                  </td>
+                  <td bgcolor="#EEEEFF">
+                    <input
+                      name="WithdrawalAge"
+                      style="
+                        font-family: Verdana, Arial;
+                        font-size: 8pt;
+                      "
+                      title="Withdrawals Will End"
+                      onFocus="select();"
+                      onBlur="checkWithAge(this.form);"
+                      value="85"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2" bgcolor="#FFFFEE">
+                    <span class="FontFive">
+                      <strong>
+                        <input
+                          name="today"
+                          type="checkbox"
+                          title="Show Annual Income"
+                          value="1"
+                          checked
+                        />
+                        Show Annual Income in Current Dollars</strong
+                      ><br />
+                      (Hint: Check this box to show the annual income
+                      amount in today's dollars.)<br />
+                      <br />
+
+                      <strong>
+                        <input
+                          name="inflation"
+                          type="checkbox"
+                          title="Adjust for Inflation"
+                          value="0"
+                        />
+                        Adjust for Inflation</strong
+                      ><br />
+                      (Hint: Check this box to account for the effects
+                      of inflation over time.)<br />
+                      <br />
+                    </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td bgcolor="#EEEEEE">
+                    <span class="FontFour"> Inflation Rate: </span>
+                  </td>
+                  <td bgcolor="#FFEEFF">
+                    <input
+                      name="InflationRate"
+                      style="
+                        font-family: Verdana, Arial;
+                        font-size: 8pt;
+                      "
+                      title="Inflation Rate"
+                      onFocus="select();"
+                      onBlur="checkInf(this.form);"
+                      value="3"
+                    />
+                  </td>
+                </tr>
+              </table>
+              <script language="JavaScript" src="enda.js"></script>
+            </center>
+          </form>
+        </td>
+      </tr>
+    </table>
+    <a href="https://www.ngcu.org/" style="margin-left: 4rem"
+      >Site Map</a
+    >
+  </body>
+</html>

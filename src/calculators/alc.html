@@ -1,0 +1,243 @@
+<html lang="en">
+  <head>
+    <title>
+      InternetActive Calculators: Advanced Loan Calculator
+    </title>
+    <!--InternetActive Calculators�-->
+    <!--Version 2.0-->
+    <!--Copyright � 1998 - 2001 Desert Cactus Software Corporation-->
+
+    <script language="JavaScript" src="style.js"></script>
+
+    <script language="JavaScript" src="alcv.js"></script>
+  </head>
+
+  <body
+    bgcolor="#FFFFFF"
+    text="#000000"
+    link="#000099"
+    vlink="#9999FF"
+    alink="#CC0000"
+    leftmargin="0"
+    topmargin="0"
+    marginwidth="0"
+    marginheight="0"
+  >
+    <table width="500" role="presentation">
+      <tr>
+        <td>
+          <center></center>
+          <form action="alcr.html">
+            <center>
+              <table border="1" cellpadding="7" role="presentation">
+                <tr>
+                  <td colspan="2" bgcolor="#FFFFEE">
+                    <center>
+                      <h1 style="font-size: 1.125em">
+                        <span class="FontTwo"
+                          ><strong
+                            >InternetActive Calculators�</strong
+                          >
+                        </span>
+                        <br />
+                        <span class="FontThree">
+                          <strong
+                            >Advanced Loan Calculator</strong
+                          ></span
+                        >
+                      </h1>
+                    </center>
+                  </td>
+                </tr>
+                <tr></tr>
+                <tr>
+                  <td bgcolor="#EEEEEE">
+                    <span class="FontFour"> Loan Amount: </span>
+                  </td>
+                  <td bgcolor="#EEFFEE">
+                    <input
+                      name="LoanAmount"
+                      style="
+                        font-family: Verdana, Arial;
+                        font-size: 8pt;
+                      "
+                      title="Loan Amount"
+                      onFocus="select();"
+                      onBlur="checkLA(this.form);"
+                      value="25000"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td bgcolor="#EEEEEE">
+                    <span class="FontFour"> Interest Rate: </span>
+                  </td>
+                  <td bgcolor="#FFEEEE">
+                    <input
+                      name="InterestRate"
+                      style="
+                        font-family: Verdana, Arial;
+                        font-size: 8pt;
+                      "
+                      title="Interest Rate"
+                      onFocus="select();"
+                      onBlur="checkIR(this.form);"
+                      value="8"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td bgcolor="#EEEEEE">
+                    <span class="FontFour"> Number of Years: </span>
+                  </td>
+                  <td bgcolor="#EEEEFF">
+                    <input
+                      name="NumberOfYears"
+                      style="
+                        font-family: Verdana, Arial;
+                        font-size: 8pt;
+                      "
+                      title="Number of Years"
+                      onFocus="select();"
+                      onBlur="checkY(this.form);"
+                      value="5"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td bgcolor="#EEEEEE">
+                    <span class="FontFour">
+                      Number of Periods Per Year:
+                    </span>
+                  </td>
+                  <td bgcolor="#FFEEFF">
+                    <input
+                      name="NumberOfPeriods"
+                      style="
+                        font-family: Verdana, Arial;
+                        font-size: 8pt;
+                      "
+                      title="Number of Periods Per Year"
+                      onFocus="select();"
+                      onBlur="checkP(this.form);"
+                      value="12"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td bgcolor="#EEEEEE">
+                    <span class="FontFour">
+                      Additional Principal Per Period:
+                    </span>
+                  </td>
+                  <td bgcolor="#EEFFEE">
+                    <input
+                      name="AdditionalPrincipal"
+                      style="
+                        font-family: Verdana, Arial;
+                        font-size: 8pt;
+                      "
+                      title="Additional Principal Per Period"
+                      onFocus="select();"
+                      onBlur="checkAP(this.form);"
+                      value="0"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2" bgcolor="#FFFFEE">
+                    <span class="FontFour">
+                      <input
+                        name="compound_option"
+                        type="radio"
+                        title="Daily Basis"
+                        value="0"
+                      />
+                      Compound on a Daily Basis<br />
+                      <input
+                        name="compound_option"
+                        type="radio"
+                        title="Weekly Basis"
+                        value="1"
+                      />
+                      Compound on a Weekly Basis<br />
+                      <input
+                        name="compound_option"
+                        type="radio"
+                        title="Bi-Weekly Basis"
+                        value="2"
+                      />
+                      Compound on a Bi-Weekly Basis<br />
+                      <input
+                        name="compound_option"
+                        type="radio"
+                        title="Semi-Monthly Basis"
+                        value="3"
+                      />
+                      Compound on a Semi-Monthly Basis<br />
+                      <input
+                        name="compound_option"
+                        type="radio"
+                        title="Monthly Basis"
+                        value="4"
+                        checked
+                      />
+                      Compound on a Monthly Basis<br />
+                      <input
+                        name="compound_option"
+                        type="radio"
+                        title="Quarterly Basis"
+                        value="5"
+                      />
+                      Compound on a Quarterly Basis<br />
+                      <input
+                        name="compound_option"
+                        type="radio"
+                        title="Semi-Annual Basis"
+                        value="6"
+                      />
+                      Compound on a Semi-Annual Basis<br />
+                      <input
+                        name="compound_option"
+                        type="radio"
+                        title="Annual Basis"
+                        value="7"
+                      />
+                      Compound on an Annual Basis<br />
+                    </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2" bgcolor="#FFFFEE">
+                    <span class="FontFive">
+                      <input
+                        name="calculate_option"
+                        type="radio"
+                        title="Payment Only"
+                        value="0"
+                        checked
+                      />
+                      Calculate Payment Only<br />
+                      <input
+                        name="calculate_option"
+                        type="radio"
+                        title="Payment and Display Amortization Schedule"
+                        value="1"
+                      />
+                      Calculate Payment and Display Amortization
+                      Schedule<br />
+                    </span>
+                  </td>
+                </tr>
+              </table>
+              <script language="JavaScript" src="enda.js"></script>
+            </center>
+          </form>
+        </td>
+      </tr>
+    </table>
+    <a href="https://www.ngcu.org/" style="margin-left: 4rem"
+      >Site Map</a
+    >
+  </body>
+</html>
